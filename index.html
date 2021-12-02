@@ -48,7 +48,7 @@
     <!--Герой-->
     
     <section class="hero">
-        <div class="overlay">
+        <div class="container">
             <h1>Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </div>
@@ -56,51 +56,52 @@
     
     <!--Секция Преимущества нашей компании-->
     
-    <section class="container">
-        <h2 class="section-title visually-hidden" >Особенности</h2>
-        <ul class="benefits">
-            <li class="item">
-                <div class="button-icon">
-                    <svg class="benefits-icon">
-                        <use href="./images/icons.svg#icon-antenna"></use>
-                    </svg>
-                </div>
-                <h3 class="benefits-title">Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>
-            <li class="item">
-                <div class="button-icon">
-                    <svg class="benefits-icon">
-                        <use href="./images/icons.svg#icon-clock"></use>
-                    </svg>
-                </div>
-                <h3 class="benefits-title">Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>
-            <li class="item">
-                <div class="button-icon">
-                <svg class="benefits-icon">
-                    <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-                </div>
-                <h3 class="benefits-title">Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+    <section >
+        <div class="container">
+            <h2 class="section-title visually-hidden" >Особенности</h2>
+            <ul class="benefits">
+                <li class="item">
+                    <div class="button-icon">
+                        <svg class="benefits-icon">
+                            <use href="./images/icons.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
+                    <h3 class="benefits-title">Внимание к деталям</h3>
+                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li class="item">
+                    <div class="button-icon">
+                        <svg class="benefits-icon">
+                            <use href="./images/icons.svg#icon-clock"></use>
+                        </svg>
+                    </div>
+                    <h3 class="benefits-title">Пунктуальность</h3>
+                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="item">
                     <div class="button-icon">
                     <svg class="benefits-icon">
-                        <use href="./images/icons.svg#icon-astronaut"></use>
+                        <use href="./images/icons.svg#icon-diagram"></use>
                     </svg>
                     </div>
-                <h3 class="benefits-title">Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>        
-        </ul>
-        
+                    <h3 class="benefits-title">Планирование</h3>
+                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="item">
+                        <div class="button-icon">
+                        <svg class="benefits-icon">
+                            <use href="./images/icons.svg#icon-astronaut"></use>
+                        </svg>
+                        </div>
+                    <h3 class="benefits-title">Современные технологии</h3>
+                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </li>        
+            </ul>
+        </div>
     </section>
     <!--Секция чем мы занимаемся-->
-    <section class="container work">
-        
+    <section class="work">
+        <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="works">
                 <li class="item">
@@ -122,7 +123,7 @@
                     </div>
                 </li>
             </ul>
-        
+        </div>
     </section>
     <!--Секция наша команда-->
     <section class="team">
@@ -406,10 +407,10 @@
                 </svg>
             </button>
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-            <form class="form-modal">
+            <form action="#" class="form-modal">
                 <div class="form-field">
                     
-                    <input type="text" name="name" id="name" class="form-input" />
+                    <input type="text" maxlength="60" name="name" id="name" class="form-input" />
                     <svg class="modal-icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
@@ -417,7 +418,7 @@
                 </div>
                 <div class="form-field">
                     
-                    <input type="tel" name="tel-namber" id="tel-namber" class="form-input" />
+                    <input type="tel" maxlength="60" name="tel-namber" id="tel-namber" class="form-input" />
                     <svg class="modal-icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
@@ -425,7 +426,7 @@
                 </div>
                 <div class="form-field">
                     
-                    <input type="email" name="email" id="email" class="form-input" />
+                    <input type="email" name="email" maxlength="60" id="email" class="form-input" />
                     <svg class="modal-icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
@@ -433,19 +434,17 @@
                 </div>
                 <div class="form-field">
                     <label for="comment" class="form-label">Комментарий</label>
-                    <textarea name="comment"  placeholder="Введите текст"  cols="30"
+                    <textarea name="comment" maxlength="250" placeholder="Введите текст"  cols="30"
               rows="5" id="comment"></textarea>
                 </div>
-                </form>
                 
-                    
-                    <label class="checkbox-label">
-                        <input class="checkbox" type="checkbox" name="agree" value="agree">
-                        <span class="checkbox-icon"></span>
+                <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" name="agree" value="agree">
+                    <span class="checkbox-icon"></span>
                         Соглашаюсь с рассылкой и принимаю <a a href="" class="link-deal"> Условия договора</a>   
-                    </label>
-                    <button class="button primary modal-submit" type="submit">Отправить</button>
-            
+                </label>
+                <button class="button primary modal-submit" type="submit">Отправить</button>
+            </form>
         </div>
         
     </div>
