@@ -250,24 +250,17 @@ address .contact-item.list:last-child {
 }
 /**-------------------Hero------------------**/
 
-.main-section {
-    background-color: var(--footer-bg);
-}
 .hero {
-    min-width: 1600px;
-    background-size: contain;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
-    background-position: center;
-
+    margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    background-repeat: no-repeat;
+    background-color: var(--footer-bg);
     padding-top: 200px;
     padding-bottom: 200px;
-    /* max-width: 1600px;
-    background-size: cover; */
+    max-width: 1600px;
+    background-size: cover;
 }
 
 .hero h1 {
@@ -582,14 +575,15 @@ address .contact-item.list:last-child {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+
     margin-left: auto;
     margin-right: auto;
 }
 
 footer {
     background-color: var(--footer-bg);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .footer-contacts {
@@ -808,13 +802,9 @@ textarea {
     margin-bottom: 28px;
 }
 
-.form-field:nth-of-type(4) {
-    margin-bottom: 20px;
-}
-/* 
 .form-field:last-child {
     margin-bottom: 20px;
-} */
+}
 
 .form-input {
     margin: 0;
